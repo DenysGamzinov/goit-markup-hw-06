@@ -1,3 +1,4 @@
+
 :root {
     --primary-brand: #4d5ae5;
     --dark: #2e2f42;
@@ -18,6 +19,15 @@
 *::after {
     box-sizing: border-box;
 }
+
+/* body {
+    font-family: var(--main-font);
+    color: var(--text);
+    background-color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+} */
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -35,7 +45,8 @@ h6 {
     margin-bottom: 0;
 }
 
-ul, ol {
+ul,
+ol {
     margin-top: 0;
     margin-bottom: 0;
     padding-left: 0;
@@ -63,12 +74,20 @@ address {
     font-style: normal;
 }
 
+/* .list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+} */
+
 .container {
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin: 0 auto;
-    /* outline: 2px solid red; */
+    /* outline: 1px solid blue; */
 }
 
 .visually-hidden {
@@ -78,6 +97,7 @@ address {
     margin: -1px;
     border: 0;
     padding: 0;
+
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
@@ -258,8 +278,10 @@ address {
 .mob-soc-icon {
     fill: #F4F4FD;
 }
-/* ================= Solution ================ */
+
 .main-page {}
+
+/* ================= Solution ================ */
 
 .solution {
     padding: 72px 16px;
@@ -369,6 +391,7 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
 /* ================= Team ================ */
 
 .team {
@@ -704,7 +727,8 @@ address {
     fill: #ffffff;
     margin-left: 16px;
 }
-/* ================ Back drop =============== */
+
+/* ================= Backdrop ================ */
 
 .backdrop {
     position: fixed;
@@ -794,7 +818,7 @@ address {
 
 .modal-input-wrap {
     position: relative;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .modal-input {
@@ -919,6 +943,12 @@ address {
     background-color: #404bbf;
     border: none;
     fill: #ffffff
+}
+
+.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 @media screen and (min-width: 320px) {}
@@ -1210,8 +1240,3 @@ address {
         justify-content: flex-start;
     }
 }
-/* .is-open {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-}*/
