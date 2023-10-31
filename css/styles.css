@@ -378,12 +378,12 @@ address {
 .icon {}
 
 .features-subtitle {
+    font-size: 36px;
     color: #2e2f42;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .features-item-text {
@@ -818,7 +818,7 @@ address {
 
 .modal-input-wrap {
     position: relative;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .modal-input {
@@ -951,6 +951,8 @@ address {
     pointer-events: auto;
 }
 
+/*------------------Adaptation--------------------------*/
+
 @media screen and (min-width: 320px) {}
 
 @media screen and (min-width: 768px) {
@@ -1080,6 +1082,10 @@ address {
         width: calc((100% - 72px) / 2);
     }
 
+    .features-subtitle {
+        text-align: start;
+    }
+
     .team>.container {
         width: 584px;
     }
@@ -1185,6 +1191,12 @@ address {
         justify-content: center;
 
     }
+
+    .features-subtitle {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+      }
 
     .team>.container {
         width: 1158px;
